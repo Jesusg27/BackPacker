@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/guideline" app:layout_constraintGuide_begin="16dp"
+            android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/guideline2" app:layout_constraintGuide_begin="170dp"
+            android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/guideline3" app:layout_constraintGuide_begin="192dp"
+            android:orientation="horizontal"/>
+
+    <ImageView
+            android:layout_width="99dp"
+            android:layout_height="155dp" app:srcCompat="@drawable/xelha"
+            android:id="@+id/elpIvPelicula" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2" app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@null"
+            android:layout_marginStart="8dp"/>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/elpTvTitulo" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintStart_toEndOf="@+id/elpIvPelicula"
+            android:layout_marginStart="8dp" android:textSize="18sp" tools:ignore="HardcodedText"/>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/elpTvGenero" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/elpTvTitulo" app:layout_constraintStart_toEndOf="@+id/elpIvPelicula"
+            android:layout_marginStart="16dp" tools:ignore="HardcodedText"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/estiloCalificacion"
+            android:stepSize="0.1"
+            android:id="@+id/elpRbCalificacion" app:layout_constraintStart_toEndOf="@+id/elpIvPelicula"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

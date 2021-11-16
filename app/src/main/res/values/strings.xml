@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BackPacker</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="titulo">Título: %1$s</string>
+
+    <string name="lugar">Lugar: %1$s</string>
+
+    <string name="Descripcion">Descripcion: %1$s</string>
+
+    <string name="calificacion">Calificación: %1$s</string>
+
+    <string name="horarios">Horarios: %1$s dias del año</string>
+
+    <string name="disponibilidad">Disponibilidad: %1$s</string>
+</resources>
